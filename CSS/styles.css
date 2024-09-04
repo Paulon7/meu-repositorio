@@ -1,0 +1,135 @@
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, ou uma sans-serif genérica se Arial não estiver disponível */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+    background-color: #f9f9f9; /* Define a cor de fundo da página como um cinza muito claro */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding padrão do navegador */
+}
+
+/* Cabeçalho */
+header {
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    padding: 20px; /* Adiciona padding de 20px em torno do cabeçalho */
+}
+
+/* Links de Navegação como Botões */
+nav a,
+.main-buttons a {
+    display: inline-block; /* Faz os links se comportarem como blocos inline, permitindo padding e margens */
+    background-color: #007bff; /* Define a cor de fundo dos links como azul */
+    color: white; /* Define a cor do texto dos links como branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 10px 20px; /* Adiciona padding interno de 10px em cima e embaixo, 20px nas laterais */
+    margin: 5px; /* Adiciona uma margem de 5px ao redor dos links */
+    border-radius: 25px; /* Torna os cantos dos links arredondados com um raio de 25px */
+    font-size: 16px; /* Define o tamanho da fonte dos links como 16px */
+    transition: background-color 0.3s, transform 0.2s; /* Adiciona uma transição suave para a cor de fundo e transformação */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve aos links */
+}
+
+nav a:hover,
+.main-buttons a:hover {
+    background-color: #0056b3; /* Muda a cor de fundo para um azul mais escuro quando o mouse passa sobre o link */
+    transform: translateY(-3px); /* Move o link para cima em 3px */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Intensifica a sombra quando o link é hover */
+}
+
+nav a:active,
+.main-buttons a:active {
+    transform: translateY(0); /* Remove o deslocamento quando o link é clicado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Restaura a sombra padrão quando o link é clicado */
+}
+
+/* Seção Principal */
+main section {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Aplica um gradiente de fundo linear do roxo para o azul */
+    padding: 50px; /* Adiciona um padding interno de 50px */
+    text-align: center; /* Centraliza o texto dentro da seção */
+    color: white; /* Define a cor do texto como branca */
+}
+
+/* Título Principal */
+main section h1 {
+    font-size: 36px; /* Define o tamanho da fonte do título principal como 36px */
+    margin-bottom: 20px; /* Adiciona uma margem de 20px abaixo do título */
+    color: #f9f9f9; /* Define a cor do título como um cinza muito claro */
+}
+
+/* Botões "Ver Meus Projetos" e "Saiba Mais" */
+.main-buttons {
+    margin-top: 30px; /* Adiciona uma margem de 30px acima dos botões */
+    color: #f9f9f9; /* Define a cor do texto dos botões como um cinza muito claro */
+}
+
+.main-buttons a {
+    padding: 15px 30px; /* Adiciona padding interno de 15px em cima e embaixo, 30px nas laterais */
+    font-size: 18px; /* Define o tamanho da fonte dos botões como 18px */
+    color: #f9f9f9; /* Define a cor do texto dos botões como um cinza muito claro */
+}
+
+/* Rodapé */
+footer {
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+    padding: 20px; /* Adiciona um padding de 20px ao redor do rodapé */
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajustes para tablets e telas menores */
+    
+    .contact {
+      padding: 15px; /* Reduz o padding interno para se ajustar melhor em telas menores */
+    }
+  
+    .contact-form {
+      flex-direction: column; /* Garante que os itens ainda se organizem em uma coluna */
+    }
+  
+    .form-group {
+      margin-bottom: 10px; /* Reduz a margem inferior dos grupos de campos */
+    }
+  
+    input, textarea {
+      font-size: 14px; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas menores */
+    }
+  
+    .submit-button {
+      padding: 10px 15px; /* Ajusta o padding para um tamanho mais adequado em telas menores */
+    }
+  
+    .contact-info {
+      margin-top: 15px; /* Reduz a margem superior para economizar espaço */
+    }
+  
+    .social-links a {
+      margin-right: 8px; /* Ajusta a margem direita dos links sociais */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajustes para smartphones e telas muito pequenas */
+    
+    .contact {
+      padding: 10px; /* Reduz ainda mais o padding interno */
+    }
+  
+    .form-group {
+      margin-bottom: 8px; /* Reduz a margem inferior dos grupos de campos */
+    }
+  
+    input, textarea {
+      font-size: 12px; /* Reduz o tamanho da fonte para se ajustar melhor em telas pequenas */
+    }
+  
+    .submit-button {
+      padding: 8px 12px; /* Ajusta o padding para se ajustar melhor em telas pequenas */
+    }
+  
+    .contact-info {
+      margin-top: 10px; /* Reduz a margem superior */
+    }
+  
+    .social-links a {
+      margin-right: 5px; /* Ajusta a margem direita dos links sociais */
+    }
+  }

@@ -1,0 +1,160 @@
+/* Define o estilo geral da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte como Arial, ou uma sans-serif genérica se Arial não estiver disponível */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #f4f4f4; /* Define a cor de fundo da página */
+    color: #333333; /* Define a cor do texto */
+}
+
+/* Estiliza o cabeçalho da página */
+header {
+    background: #0918eb; /* Cor de fundo azul escuro */
+    color: #fff; /* Cor do texto branca */
+    padding: 10px 0; /* Adiciona padding de 10px em cima e embaixo */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza as seções da página */
+section {
+    padding: 20px; /* Adiciona padding interno de 20px */
+    margin: 20px; /* Adiciona uma margem de 20px ao redor */
+    background: #fff; /* Cor de fundo branca */
+    border-radius: 5px; /* Bordas arredondadas de 5px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor */
+}
+
+/* Estiliza as imagens na seção com ID "introducao" */
+#introducao img {
+    width: 150px; /* Define a largura das imagens como 150px */
+    border-radius: 50%; /* Torna as imagens redondas */
+    display: block; /* Faz a imagem ser tratada como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Remove as marcas de lista e o padding das listas na seção com ID "habilidades" */
+#habilidades ul {
+    list-style: none; /* Remove as marcas de lista */
+    padding: 0; /* Remove o padding */
+}
+
+/* Estiliza os itens da lista na seção com ID "habilidades" */
+#habilidades li {
+    margin: 10px 0; /* Adiciona uma margem de 10px em cima e embaixo */
+    padding: 10px; /* Adiciona padding interno de 10px */
+    background: #eee; /* Cor de fundo cinza claro */
+    border-radius: 5px; /* Bordas arredondadas de 5px */
+}
+
+/* Estiliza a linha do tempo */
+.timeline {
+    position: relative; /* Define o posicionamento relativo para os eventos */
+    margin: 20px 0; /* Adiciona uma margem de 20px em cima e embaixo */
+}
+
+/* Estiliza os eventos da linha do tempo */
+.timeline-event {
+    margin-bottom: 20px; /* Adiciona uma margem de 20px na parte inferior */
+    padding-left: 40px; /* Adiciona padding à esquerda para o marcador */
+    position: relative; /* Define o posicionamento relativo para os marcadores */
+}
+
+/* Adiciona um marcador circular antes de cada evento na linha do tempo */
+.timeline-event:before {
+    content: ''; /* Adiciona um conteúdo vazio para criar o marcador */
+    position: absolute; /* Define o posicionamento absoluto do marcador */
+    left: 0; /* Posiciona o marcador no canto esquerdo */
+    top: 5px; /* Posiciona o marcador um pouco abaixo do topo */
+    width: 30px; /* Define a largura do marcador */
+    height: 30px; /* Define a altura do marcador */
+    background: #333; /* Cor de fundo do marcador */
+    border-radius: 50%; /* Torna o marcador redondo */
+}
+
+/* Estiliza os parágrafos */
+p {
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Adiciona uma margem de 20px em cima e embaixo */
+}
+
+/* Estiliza a seção para voltar ao topo */
+.back-to-top {
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px 0; /* Adiciona uma margem de 20px em cima e embaixo */
+}
+
+/* Estiliza os botões */
+.button {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 15px; /* Adiciona padding interno de 10px em cima e embaixo, e 15px nas laterais */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    border-radius: 5px; /* Bordas arredondadas de 5px */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+/* Estiliza o botão ao passar o mouse sobre ele */
+.button:hover {
+    background-color: #0056b3; /* Muda a cor de fundo para um azul mais escuro */
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajustes para tablets e telas menores */
+    
+    .contact {
+      padding: 15px; /* Reduz o padding interno para se ajustar melhor em telas menores */
+    }
+  
+    .contact-form {
+      flex-direction: column; /* Garante que os itens ainda se organizem em uma coluna */
+    }
+  
+    .form-group {
+      margin-bottom: 10px; /* Reduz a margem inferior dos grupos de campos */
+    }
+  
+    input, textarea {
+      font-size: 14px; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas menores */
+    }
+  
+    .submit-button {
+      padding: 10px 15px; /* Ajusta o padding para um tamanho mais adequado em telas menores */
+    }
+  
+    .contact-info {
+      margin-top: 15px; /* Reduz a margem superior para economizar espaço */
+    }
+  
+    .social-links a {
+      margin-right: 8px; /* Ajusta a margem direita dos links sociais */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajustes para smartphones e telas muito pequenas */
+    
+    .contact {
+      padding: 10px; /* Reduz ainda mais o padding interno */
+    }
+  
+    .form-group {
+      margin-bottom: 8px; /* Reduz a margem inferior dos grupos de campos */
+    }
+  
+    input, textarea {
+      font-size: 12px; /* Reduz o tamanho da fonte para se ajustar melhor em telas pequenas */
+    }
+  
+    .submit-button {
+      padding: 8px 12px; /* Ajusta o padding para se ajustar melhor em telas pequenas */
+    }
+  
+    .contact-info {
+      margin-top: 10px; /* Reduz a margem superior */
+    }
+  
+    .social-links a {
+      margin-right: 5px; /* Ajusta a margem direita dos links sociais */
+    }
+  }

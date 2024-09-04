@@ -1,0 +1,142 @@
+/* Estiliza a seção de contato */
+.contact {
+  max-width: 600px; /* Define a largura máxima da seção como 600px */
+  margin: auto; /* Centraliza a seção horizontalmente */
+  padding: 20px; /* Adiciona um padding interno de 20px */
+  background-color: #f9f9f9; /* Define a cor de fundo como um cinza muito claro */
+  border-radius: 8px; /* Adiciona bordas arredondadas de 8px */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para um efeito de elevação */
+}
+
+/* Estiliza o formulário de contato */
+.contact-form {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em uma coluna */
+}
+
+/* Estiliza os grupos de campos do formulário */
+.form-group {
+  margin-bottom: 15px; /* Adiciona uma margem de 15px na parte inferior */
+}
+
+/* Estiliza os rótulos dos campos */
+label {
+  margin-bottom: 5px; /* Adiciona uma margem de 5px abaixo do rótulo */
+  font-weight: bold; /* Torna o texto do rótulo em negrito */
+}
+
+/* Estiliza os campos de entrada e as áreas de texto */
+input, textarea {
+  width: 100%; /* Faz com que os campos ocupem toda a largura disponível */
+  padding: 10px; /* Adiciona um padding interno de 10px */
+  border: 1px solid #ddd; /* Define uma borda de 1px de cor cinza claro */
+  border-radius: 4px; /* Adiciona bordas arredondadas de 4px */
+  font-size: 16px; /* Define o tamanho da fonte como 16px */
+}
+
+/* Estiliza o botão de envio */
+.submit-button {
+  background-color: #007bff; /* Define a cor de fundo como azul */
+  color: white; /* Define a cor do texto como branca */
+  padding: 12px 20px; /* Adiciona padding interno de 12px em cima e embaixo, 20px nas laterais */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Adiciona bordas arredondadas de 5px */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+/* Estiliza o botão de envio ao passar o mouse sobre ele */
+.submit-button:hover {
+  background-color: #0056b3; /* Muda a cor de fundo para um azul mais escuro */
+}
+
+/* Estiliza a seção de informações de contato */
+.contact-info {
+  margin-top: 20px; /* Adiciona uma margem de 20px na parte superior */
+}
+
+/* Estiliza os links sociais */
+.social-links a {
+  margin-right: 10px; /* Adiciona uma margem de 10px à direita de cada link */
+}
+
+/* Estiliza a seção de "voltar ao topo" */
+.back-to-top {
+  text-align: center; /* Centraliza o conteúdo */
+  margin: 20px 0; /* Adiciona uma margem de 20px em cima e embaixo */
+}
+
+/* Estiliza os botões */
+.button {
+  background-color: #007bff; /* Define a cor de fundo como azul */
+  color: white; /* Define a cor do texto como branca */
+  padding: 10px 15px; /* Adiciona padding interno de 10px em cima e embaixo, 15px nas laterais */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  border-radius: 5px; /* Adiciona bordas arredondadas de 5px */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+/* Estiliza o botão ao passar o mouse sobre ele */
+.button:hover {
+  background-color: #0056b3; /* Muda a cor de fundo para um azul mais escuro */
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Ajustes para tablets e telas menores */
+  
+  .contact {
+    padding: 15px; /* Reduz o padding interno para se ajustar melhor em telas menores */
+  }
+
+  .contact-form {
+    flex-direction: column; /* Garante que os itens ainda se organizem em uma coluna */
+  }
+
+  .form-group {
+    margin-bottom: 10px; /* Reduz a margem inferior dos grupos de campos */
+  }
+
+  input, textarea {
+    font-size: 14px; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas menores */
+  }
+
+  .submit-button {
+    padding: 10px 15px; /* Ajusta o padding para um tamanho mais adequado em telas menores */
+  }
+
+  .contact-info {
+    margin-top: 15px; /* Reduz a margem superior para economizar espaço */
+  }
+
+  .social-links a {
+    margin-right: 8px; /* Ajusta a margem direita dos links sociais */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para smartphones e telas muito pequenas */
+  
+  .contact {
+    padding: 10px; /* Reduz ainda mais o padding interno */
+  }
+
+  .form-group {
+    margin-bottom: 8px; /* Reduz a margem inferior dos grupos de campos */
+  }
+
+  input, textarea {
+    font-size: 12px; /* Reduz o tamanho da fonte para se ajustar melhor em telas pequenas */
+  }
+
+  .submit-button {
+    padding: 8px 12px; /* Ajusta o padding para se ajustar melhor em telas pequenas */
+  }
+
+  .contact-info {
+    margin-top: 10px; /* Reduz a margem superior */
+  }
+
+  .social-links a {
+    margin-right: 5px; /* Ajusta a margem direita dos links sociais */
+  }
+}
