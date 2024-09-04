@@ -73,63 +73,28 @@ footer {
     text-align: center; /* Centraliza o texto dentro do rodapé */
     padding: 20px; /* Adiciona um padding de 20px ao redor do rodapé */
 }
-/* Responsividade */
+/* Imagem Responsiva */
+img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço abaixo da imagem que pode ocorrer com imagens inline */
+    margin: 0 auto; /* Centraliza a imagem se ela estiver em um bloco com largura menor que a imagem */
+}
+
+/* Ajustes Específicos para Dispositivos Móveis */
 @media (max-width: 768px) {
     /* Ajustes para tablets e telas menores */
-    
-    .contact {
-      padding: 15px; /* Reduz o padding interno para se ajustar melhor em telas menores */
+    img {
+        max-width: 100%; /* Garante que a imagem se ajuste à largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
     }
-  
-    .contact-form {
-      flex-direction: column; /* Garante que os itens ainda se organizem em uma coluna */
-    }
-  
-    .form-group {
-      margin-bottom: 10px; /* Reduz a margem inferior dos grupos de campos */
-    }
-  
-    input, textarea {
-      font-size: 14px; /* Reduz o tamanho da fonte para melhorar a legibilidade em telas menores */
-    }
-  
-    .submit-button {
-      padding: 10px 15px; /* Ajusta o padding para um tamanho mais adequado em telas menores */
-    }
-  
-    .contact-info {
-      margin-top: 15px; /* Reduz a margem superior para economizar espaço */
-    }
-  
-    .social-links a {
-      margin-right: 8px; /* Ajusta a margem direita dos links sociais */
-    }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     /* Ajustes para smartphones e telas muito pequenas */
-    
-    .contact {
-      padding: 10px; /* Reduz ainda mais o padding interno */
+    img {
+        max-width: 100%; /* Garante que a imagem se ajuste à largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        margin: 0; /* Remove margens adicionais que podem causar problemas de layout */
     }
-  
-    .form-group {
-      margin-bottom: 8px; /* Reduz a margem inferior dos grupos de campos */
-    }
-  
-    input, textarea {
-      font-size: 12px; /* Reduz o tamanho da fonte para se ajustar melhor em telas pequenas */
-    }
-  
-    .submit-button {
-      padding: 8px 12px; /* Ajusta o padding para se ajustar melhor em telas pequenas */
-    }
-  
-    .contact-info {
-      margin-top: 10px; /* Reduz a margem superior */
-    }
-  
-    .social-links a {
-      margin-right: 5px; /* Ajusta a margem direita dos links sociais */
-    }
-  }
+}
